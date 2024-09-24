@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+h1, h2 {
+    color: #111;
+}
+
+nav {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.video-frame {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.label-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.label.html { background-color: #e44d26; }
+.label.css { background-color: #264de4; }
+.label.javascript { background-color: #f0db4f; color: white; }
+.label.nodejs { background-color: #8cc84b; color: white; }
+.label.mysql { background-color: #00758f; }
+
+.label.aws { background-color: #f0c14b; }
+.label.lambda { background-color: #232f3e; }
+.label.api-gateway { background-color: #43a047; }
+.label.rekognition { background-color: #ff9900; }
+
+.label.python { background-color: #3776ab; }
+.label.streamlit { background-color: #ff4b4b; }
+
+.label.uipath { background-color: #a435f0; }
+
+.label.flutter { background-color: #42a5f5; }
+.label.dart { background-color: #00b4aa; }
+.label.firebase { background-color: #ffa726; }
+
+.watch-button {
+    display: inline-block;
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #0a75d4;
+}

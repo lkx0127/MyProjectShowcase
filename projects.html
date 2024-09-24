@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lim Ker Xin - Projects Portfolio</title>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-4 bg-white px-6 fixed top-0 w-full shadow-md">
+        <h1 class="text-3xl font-semibold">Lim Ker Xin</h1>
+        <ul class="flex space-x-8 text-lg">
+            <li><a href="#projects" class="hover:text-gray-600">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-24 p-6">
+        <h2 class="text-4xl mb-8 text-center font-bold flex items-center justify-center">
+            My Projects
+            <img src="public/images/rocket.svg" alt="Rocket Icon" class="ml-3 w-8 h-8">
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+            <!-- Project 1: ADEV E-commerce Admin Website -->
+            <div class="project-card">
+                <h3 class="project-title">ADEV: E-commerce Admin Website</h3>
+                <iframe src="https://www.youtube.com/embed/0V3j0Elo0mo" class="video-frame" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    This project is a web platform designed for e-commerce administrators to efficiently manage product listings. It includes full CRUD (Create, Read, Update, Delete) functionality, allowing admins to add, update, and delete products. It also provides advanced search filters by category and name to improve search efficiency. The platform uses NodeJS for back-end server logic, MySQL for secure data management, and REST APIs to handle requests and perform operations on the server. The user interface is responsive and built using HTML, CSS, and JavaScript.
+                </p>
+                <div class="label-container">
+                    <span class="label html"><img src="public/images/html-logo.svg" class="logo-icon">HTML</span>
+                    <span class="label css"><img src="public/images/css-logo.svg" class="logo-icon">CSS</span>
+                    <span class="label javascript"><img src="public/images/js-logo.svg" class="logo-icon">JavaScript</span>
+                    <span class="label nodejs"><img src="public/images/nodejs-logo.svg" class="logo-icon">NodeJS</span>
+                    <span class="label mysql"><img src="public/images/mysql-logo.svg" class="logo-icon">MySQL</span>
+                </div>
+                <a href="https://youtu.be/0V3j0Elo0mo" target="_blank" class="watch-button">Watch Video</a>
+            </div>
+
+            <!-- Project 2: CTAI Waste Classification Website using AWS -->
+            <div class="project-card">
+                <h3 class="project-title">CTAI: Waste Classification Website using AWS</h3>
+                <iframe src="https://www.youtube.com/embed/IOFX_qBMjgY" class="video-frame" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    This website is designed to help individuals who lack recycling knowledge or are too busy to sort waste properly. It allows users to upload images of waste, and the system automatically classifies the waste type using AWS services. When users upload an image, the website—hosted on AWS S3—triggers REST APIs via AWS API Gateway. The API Gateway sends the image data to AWS Lambda, which processes the image using AWS Rekognition to determine the waste type. AWS Lambda then stores the classified data in AWS RDS (MySQL), allowing users to retrieve the results later. This project aims to make waste sorting easier for individuals, promoting better recycling habits by simplifying the process.
+                </p>
+                <div class="label-container">
+                    <span class="label aws"><img src="public/images/aws-s3-logo.svg" class="logo-icon">AWS S3</span>
+                    <span class="label lambda"><img src="public/images/lambda-logo.svg" class="logo-icon">AWS Lambda</span>
+                    <span class="label api-gateway"><img src="public/images/api-gateway-logo.svg" class="logo-icon">AWS API Gateway</span>
+                    <span class="label rekognition"><img src="public/images/rekognition-logo.svg" class="logo-icon">AWS Rekognition</span>
+                    <span class="label mysql"><img src="public/images/mysql-logo.svg" class="logo-icon">AWS RDS (MySQL)</span>
+                </div>
+                <a href="https://youtu.be/IOFX_qBMjgY" target="_blank" class="watch-button">Watch Video</a>
+            </div>
+
+            <!-- Project 3: MLDP Student Grade Prediction Model -->
+            <!-- Project 3: MLDP Student Grade Prediction Model -->
+            <div class="project-card">
+                <h3 class="project-title">MLDP: Student Grade Prediction Model</h3>
+                <iframe src="https://www.youtube.com/embed/H7qR5YDLzCQ" class="video-frame" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    This machine learning model predicts student performance based on various profile factors such as age, parental education, supportiveness, extracurricular activities, and tutoring. Multiple classifiers were tested using default parameters, with Gradient Boosting achieving the best performance. After fine-tuning the model, it reached an accuracy of 0.73. The model analyzes trends in student data, helping to identify those who may need additional support. Results are visualized using Streamlit, providing teachers with insights to personalize learning interventions for students.
+                </p>
+                <div class="label-container">
+                    <span class="label python"><img src="public/images/python-logo.svg" class="logo-icon">Python</span>
+                    <span class="label streamlit"><img src="public/images/streamlit-logo.svg" class="logo-icon">Streamlit</span>
+                </div>
+                <a href="https://youtu.be/H7qR5YDLzCQ" target="_blank" class="watch-button">Watch Video</a>
+            </div>
+
+            <!-- Project 4: RPA HR System Automation -->
+            <div class="project-card">
+                <h3 class="project-title">RPA: HR System Automation</h3>
+                <iframe src="https://www.youtube.com/embed/fDmJvmPvyjo" class="video-frame" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    This project automates repetitive HR tasks, reducing workload using robotic process automation (RPA) with UiPath. The system scans incoming job applications from email, filters out spam, and processes resumes by checking for key fields like name, contact information, and qualifications. If a resume is incomplete, the system uses OpenAI GPT to identify missing details and sends an email requesting corrections. Suitable candidates are evaluated, and if approved, the system automatically generates offer letters and inputs the employee’s details into the HR onboarding system. This automation helps HR departments save significant time on resume processing, candidate evaluation, and onboarding.
+                </p>
+                <div class="label-container">
+                    <span class="label uipath"><img src="public/images/uipath-logo.svg" class="logo-icon">UiPath</span>
+                </div>
+                <a href="https://youtu.be/fDmJvmPvyjo" target="_blank" class="watch-button">Watch Video</a>
+            </div>
+
+            <!-- Project 5: MBAP Food Reminder App -->
+            <div class="project-card">
+                <h3 class="project-title">MBAP: Food Reminder App</h3>
+                <iframe src="https://www.youtube.com/embed/5gExBZu--ck" class="video-frame" frameborder="0" allowfullscreen></iframe>
+                <p>
+                    This mobile app helps users manage their food inventory and reduces food waste by tracking expiration dates. Built using Flutter and integrated with Firebase for backend services, the app allows users to input details about food items, set expiration dates, and receive timely notifications before food items expire. Firebase is used for storing user data, and the app helps users manage their groceries more efficiently, preventing food waste and saving money by ensuring food is consumed before it spoils.
+                </p>
+                <div class="label-container">
+                    <span class="label flutter"><img src="public/images/flutter-logo.svg" class="logo-icon">Flutter</span>
+                    <span class="label dart"><img src="public/images/dart-logo.svg" class="logo-icon">Dart</span>
+                    <span class="label firebase"><img src="public/images/firebase-logo.svg" class="logo-icon">Firebase</span>
+                </div>
+                <a href="https://youtu.be/5gExBZu--ck" target="_blank" class="watch-button">Watch Video</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 bg-white text-center shadow-md">
+        <p class="text-gray-600">&copy; 2024 Lim Ker Xin - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
